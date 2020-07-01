@@ -3,8 +3,6 @@ import matplotlib.pyplot as plt
 
 data = pd.read_csv('/Users/annagogley/Downloads/data.csv')
 
-#узнаем неуникальные значения
-print(data.nunique())
 fig = plt.figure()
 plt.bar(data['Date'], data['Count'])
 plt.title('Дата и количество покупок')
